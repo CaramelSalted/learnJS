@@ -9,8 +9,8 @@ var mainList = {
 	open: false,
 }
 
-mainList.shopGoods[0] = prompt("Что вы продаете?");
-mainList.shopGoods[1] = prompt("Что вы продаете?");
-mainList.shopGoods[2] = prompt("Что вы продаете?");
+for (let i = 0; i < 4; i++){
+	mainList.shopGoods[i] = prompt("Что вы продаете?");
+}
 
 alert("Ваш бюджет на день " + (mainList.budget / 30));
